@@ -1,1 +1,2 @@
-# BBN
+# Resume for Bright Bekithemba Ndebele
+# 
