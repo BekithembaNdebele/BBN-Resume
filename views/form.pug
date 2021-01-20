@@ -1,0 +1,30 @@
+extends layout
+
+block content
+
+	// contact form
+	form(action="." method="POST")
+		label(for="name") Name:
+		input(
+			type="text"
+			id="name"
+			placeholder="Your Name"
+			name="name"
+		)
+		label(for="email") Your Email:
+		input(
+			type="email"
+			id="email"
+			placeholder="Email address that I should respond to"
+			name="email"
+		)
+		label(for="message") Message:
+		textarea(
+			type="text"
+			id="message"
+			placeholder="Say something ..."
+			rows="5"
+			name="massage"
+		)
+
+		input(type="submit" value="Submit")

@@ -1,0 +1,25 @@
+{
+  "name": "PersonalWebsite",
+  "version": "1.0.0",
+  "description": "Bright Ndebele's resume come website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon ./start.js"
+  },
+  "keywords": [
+    "resume",
+    "person",
+    "website"
+  ],
+  "author": "Bright Bekithemba Ndebele",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

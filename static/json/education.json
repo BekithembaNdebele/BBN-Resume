@@ -1,0 +1,23 @@
+{
+	"Education-03":{
+		"title": "Doctorate (PhD)",
+		"start":"January, 2014", 
+		"end": "July, 2017",
+		"school":"University of the Witwatersrand",
+		"thesis":"The Diffraction, Reflection and Propagation of Cylindrical Shock Wave Segments"
+	},
+	"Education-02":{
+		"title": "BSc. Chemical Engineering",
+		"start":"February, 2010", 
+		"end": "December, 2013",
+		"school":"University of the Witwatersrand",
+		"thesis":"N/A"
+	},
+	"Education-01":{
+		"title": "BSc. Maths and Physics Major (Hons)",
+		"start": "August, 2007", 
+		"end": "Did not complete as a result of protests (2009)*",
+		"school": "University of Zimbabwe",
+		"thesis": "N/A"
+	}
+}
