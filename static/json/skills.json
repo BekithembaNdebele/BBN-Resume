@@ -1,0 +1,32 @@
+[
+	{
+		"skill":"Curiosity","rating":10
+	},
+	{
+		"skill":"Computational Fluid Dynamics", "rating":7
+	},
+	{
+		"skill":"Python","rating":7
+	},
+	{
+		"skill":"Matlab","rating":8
+	},
+	{
+		"skill":"Solid Edge","rating":7
+	},
+	{
+		"skill":"Javascript","rating":6
+	},
+	{
+		"skill":"CSS","rating":7
+	},
+	{
+		"skill":"HTML","rating":8
+	},
+	{
+		"skill":"Numerical Modelling","rating":8
+	},
+	{
+		"skill":"Django, node, and pug","rating":5
+	}
+]

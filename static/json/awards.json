@@ -1,7 +1,7 @@
-{
-	"award-01": "Claude Leon post-doctoral fellowship (2019 – 2020)",
-	"award-02": "Best speaker at the 21st ISSW conference in Israel (2015)",
-	"award-03": "Awarded the 3rd prize for a poster presented at the WITS Postgraduate Symposium (2014)",
-	"award-04": "Awarded the presidential scholarship for my undergraduate studies (2010 – 2013)",
-	"award-05": "Three successive dean’s list nominations and university council scholarships",
-}
+[
+	{"awardtitle": "Claude Leon post-doctoral fellowship","period":"2019–2020"},
+	{"awardtitle": "Best speaker at the 21st ISSW conference in Israel","period":" 2015"},
+	{"awardtitle": "Awarded the 3rd prize for a poster presented at the WITS Postgraduate Symposium","period":"2014"},
+	{"awardtitle": "Awarded the presidential scholarship to study at WITS","period":"2010–2013"},
+	{"awardtitle": "Three successive dean list nominations and university council scholarships","period":"2011-2013"}
+]

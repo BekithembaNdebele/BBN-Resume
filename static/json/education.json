@@ -1,23 +1,33 @@
-{
-	"Education-03":{
-		"title": "Doctorate (PhD)",
+[
+	{
+		"title": "Doctorate (PhD) Mechanical Engineering",
 		"start":"January, 2014", 
 		"end": "July, 2017",
 		"school":"University of the Witwatersrand",
-		"thesis":"The Diffraction, Reflection and Propagation of Cylindrical Shock Wave Segments"
-	},
-	"Education-02":{
-		"title": "BSc. Chemical Engineering",
+		"thesis":"The Diffraction, Reflection and Propagation of Cylindrical Shock Wave Segments",
+		"first":true,
+		"complete": true,
+		"logo":"/images/wits-logo.png"
+	}, 
+	{
+		"title": "BSc. Chemical Engineering (Hons)",
 		"start":"February, 2010", 
 		"end": "December, 2013",
 		"school":"University of the Witwatersrand",
-		"thesis":"N/A"
+		"thesis":"N/A",
+		"first":false,
+		"complete": true,
+		"logo":"/images/wits-logo.png"
 	},
-	"Education-01":{
+	{
 		"title": "BSc. Maths and Physics Major (Hons)",
 		"start": "August, 2007", 
-		"end": "Did not complete as a result of protests (2009)*",
+		"end": "*May, 2009",
 		"school": "University of Zimbabwe",
-		"thesis": "N/A"
+		"thesis": "N/A",
+		"first":false,
+		"complete":false,
+		"reason": "The university was shutdown in 2009 due to protests over fee increases.",
+		"logo":"/images/uz-logo.png"
 	}
-}
+]

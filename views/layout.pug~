@@ -43,11 +43,11 @@ html(lang='en')
 						span Contact 
 			div.contents
 				// Introductions
-				div.tagline.hero-image Hi, my name's Bright...
+				div.tagline Hi, my name's Bright...
 				
 				// About me
 				div.subsection.section-divider#top 
-					div.table-format.center-align-in-div
+					div.table-format
 						div.profile-width.profile-text 
 							each i in profile
 								span !{i.profile}
@@ -61,7 +61,7 @@ html(lang='en')
 					hr
 					h5 Scientist 
 				// Education
-				div.subsection.section-divider.set-max-card-height#education
+				div.subsection.section-divider#education
 					span.title Education
 					hr
 					div.carousel.slide.carousel-fade(data-bs-ride="carousel")

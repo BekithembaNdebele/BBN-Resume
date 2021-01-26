@@ -1,30 +1,30 @@
-{
-	"Employment-04": {
+[
+	{
 		"title": "Post-Doc",
 		"start": "February, 2019", 
 		"end": "February, 2021",
-		"school": "Council for Science and Industrial Research",
-		"thesis": "Extracting dynamic stability derivatives using CFD",
+		"school": "Council for Science and Industrial Research (CSIR)",
+		"thesis": "Develop a CFD procedure for extracting dynamic stability derivatives"
 	},
-	"Employment-03": {
+	{
 		"title": "Sessional Lecturer",
 		"start": "July, 2015", 
 		"end": "December, 2020",
 		"school": "University of the Witwatersrand",
-		"thesis": "Lecturing Gas-Dynamics and Introduction to software engineering",
+		"thesis": "Lecturing Gas-Dynamics and Introduction to software engineering"
 	},
-	"Employment-02": {
+	{
 		"title": "Tutor",
 		"start": "July, 2014", 
 		"end": "December, 2016",
 		"school": "University of the Witwatersrand",
-		"thesis": "Tutored Process Engineering I and II.",
+		"thesis": "Tutored Process Engineering I and II."
 	},
-	"Employment-01":{
+	{
 		"title": "Junior Process Engineer",
 		"start": "January, 2014", 
 		"end": "April, 2014",
 		"school": "Logiproc Pvt. Ltd",
-		"thesis": "I worked on one project: Designing the reagents storage area for a rare earth minerals processing plant. This involved sizing and costing of equipment, preparing P&ID diagrams and some document control."
+		"thesis": "Conceptual design of a rare-earth metal processing plant's reagents storage unit"
 	}
-}
+]
