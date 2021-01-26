@@ -2,8 +2,8 @@ extends layout
 
 block content
 
-	// contact form action="/contactbright" method="POST"
-	form#contactbright()
+	// contact form
+	form(action="." method="POST")
 		label(for="name") Name:
 		input(
 			type="text"
@@ -24,7 +24,7 @@ block content
 			id="message"
 			placeholder="Say something ..."
 			rows="5"
-			name="message"
+			name="massage"
 		)
 
 		input(type="submit" value="Submit")

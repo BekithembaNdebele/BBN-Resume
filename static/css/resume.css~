@@ -2,14 +2,6 @@ body {
 	/*font-family: Garamond, serif;*/
 	background-color: #bbb;;
 }
-.hero-image {
-  background-image: linear-gradient(rgba(200, 200, 200, 0.1), rgba(153, 221, 255, 1)), url("cover.png");
-  height: 10%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
 .title {
 	font-size:5vw;
 }	
@@ -85,8 +77,8 @@ div a:hover {
 	width: 92vw;
 	text-align: center;
 	color: #000;
-	/*padding-top: 25vh;
-	margin-bottom: 10vh;*/
+	padding-top: 25vh;
+	margin-bottom: 10vh;
 	border: none red;
 }
 .subsection {
@@ -146,7 +138,6 @@ div a:hover {
 	margin-bottom:1vw;
 }
 .set-max-card-height {
-	height:40vw;
 }
 /* Contact me section */
 .contact-section{
@@ -217,5 +208,4 @@ label {
 }
 .center-align-in-div {
     display:flex;
-    align-items: center;
 }

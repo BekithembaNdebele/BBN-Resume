@@ -68,9 +68,10 @@ window.addEventListener("load", function(){
 				alert("Message received; I'll respond ASAP.")
 				formdata.reset();
 			} else {
-				console.log('Working');
-				//alert("Something went wrong!")
-			}
+			if (XHR.readyState ==4 && XHR.status ~=200){
+				console.log(XHR.responseText);
+				alert("Something went wrong!")
+			}}
 		}
         XHR.open("POST",url,true);
         XHR.setRequestHeader("Content-Type","application/json;charset=UTF-8");

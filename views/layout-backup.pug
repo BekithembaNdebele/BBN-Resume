@@ -6,64 +6,47 @@ html(lang='en')
 		link(rel='preconnect', href='https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bree+Serif&display=swap')
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 		link(rel='stylesheet', href='/css/bootstrap.min.css')
-		link(rel='stylesheet', href='/css/resume.css')
-
+		//link(rel='stylesheet', href='/css/resume.css')
+		link(rel='stylesheet', href='/css/resume-test.css')
 	body
-		div.custom-container
+		div.container
 			div.sidebar
-				div#highlight_home
-					a(href="javascript:topFunction()") 
-						i.fa.fa-home.icon-style(aria-hidden="true")
-						br 
-						span Home
-				div#highlight_education
-					a(href="javascript:scrollToContact('education')") 
-						i.fa.fa-book.icon-style(aria-hidden="true")
-						br
-						span Education
-				div#highlight_experience
-					a(href="javascript:scrollToContact('experience')") 
-						i.fa.fa-briefcase.icon-style(aria-hidden="true")
-						br
-						span Experience
-				div#highlight_abilities
-					a(href="javascript:scrollToContact('abilities')") 
+				div
+					a(href='#') 
+						i.fa.fa-home.icon-style(aria-hidden="true") 
+						span HOME 	
+				div
+					a(href='#') 
 						i.fa.fa-user.icon-style(aria-hidden="true")
-						br
-						span Abilities
-				div#highlight_awards
-					a(href="javascript:scrollToContact('awards')")
+						span ABOUT
+				div
+					a(href='#')
 						i.fa.fa-eye.icon-style(aria-hidden="true")
-						br
-						span Awards
-				div#highlight_contact
-					a(href="javascript:scrollToContact('contactCard')") 
+						span PHOTOS
+				div
+					a(href='#') 
 						i.fa.fa-envelope.icon-style(aria-hidden="true")
-						br
-						span Contact 
+						span CONTACT 
 			div.contents
 				// Introductions
-				div.tagline.hero-image Hi, my name's Bright...
+				div.tagline Hi, my name's Bright...
 				
 				// About me
-				div.subsection.section-divider#top 
-					div.table-format.center-align-in-div
-						div.profile-width.profile-text 
-							each i in profile
-								span !{i.profile}
-						div.profile-width
-							each i in profile
-								img.head-shot(src=i.image)
-						div.profile-width
-							each i in profile
-								a(href="https://wa.me/27721263378?text=Hey%20Bright.")
-										i.fa.fa-whatsapp.icon-style
-					hr
-					h5 Scientist 
+				div.subsection.section-divider 
+					span.title Profile
+					br
+					h5 I am fascinated by fluids and everything else that behaves like them.
+					table.about-me
+						tc
+							td
+								Quick note about me
+							td
+								An image
+							td
+								Quick contact
 				// Education
-				div.subsection.section-divider.set-max-card-height#education
+				div.subsection.section-divider
 					span.title Education
-					hr
 					div.carousel.slide.carousel-fade(data-bs-ride="carousel")
 						div.carousel-inner
 							each i in education
@@ -128,14 +111,11 @@ html(lang='en')
 													span !{i.title}
 											if ~i.complete
 												div.table-format
-													div.table-row-elements.row-head
-														
 													div.table-row-elements
 														span !{i.reason}
 				// Experience
-				div.subsection.section-divider#experience 
+				div.subsection.section-divider 
 					span.title Experience
-					hr
 					each j in experience
 						div.card-style
 							div.table-format
@@ -163,65 +143,48 @@ html(lang='en')
 									span Duties
 								div.table-row-elements
 									span !{j.thesis}
-						hr
 								
 				
 				// A list of tools that I am proficient in
-				div.subsection.section-divider#abilities
+				div.subsection.section-divider 
 					span.title Abilities
-					hr
 					br
 					span Over the years I have improved my proficiency in the following tools:
-					hr
-					div.table-format
-						div.skill-width
-							span Skill
-						div.rating-width
-							span Rating							
-					each k in skills
-							div.table-format
-								div.skill-width
-									span !{k.skill}
-								div.rating-width
-									- for (i=1;i<=k.rating;i++)
-										i.fa.fa-star
-									- for (i=k.rating+1;i<=10;i++)
-										i.fa.fa-star-o
-										
-				// A list of awards
-				// A list of tools that I am proficient in
-				div.subsection.section-divider#awards 
-					span.title Awards
-					div.table-format
-						div.skill-width
-							span Title
-						div.rating-width
-							span Period	
-					hr
-					each k in awards
-							div.table-format
-								div.skill-width
-									span !{k.awardtitle}
-								div.rating-width
-									span !{k.period}
-									
+					br
+					span Computational Fluid Dynamics
+					div.empty-skill-bar 
+						div.cfd.skill-level
+							span.tooltiptext I have experience working with STARCCM+ (2 years) and ANSYS Fluent (5 years).
+						
+					span Python 
+					div.empty-skill-bar 
+						div.python.skill-level
+						
+					span Matlab
+					div.empty-skill-bar 
+						div.matlab.skill-level
+						
+					span Solid Edge
+					div.empty-skill-bar 
+						div.cfd.skill-level
+						
+					span Javascript
+					div.empty-skill-bar 
+						div.javascript.skill-level
+						
+					span CSS
+					div.empty-skill-bar 
+						div.css.skill-level
+						
+					span HTML
+					div.empty-skill-bar 
+						div.html.skill-level
+						
+				div.subsection.section-divider 
+					h1 My Photos
 				
-				//div.subsection.section-divider.set-max-card-height 
-					//h1 My Photos
-					//hr
-					//div.carousel.slide.carousel-fade(data-bs-ride="carousel")
-						//div.carousel-inner
-							//each k in show_images
-								//if k.active
-									//div.carousel-item.active(data-bs-interval="2200")
-										//img.show_images(src=k.image,alt=k.alt)
-								//else
-									//div.carousel-item(data-bs-interval="2200")
-										//img.show_images(src=k.image,alt=k.alt)
-				
-				div.subsection.section-divider#contactCard
+				div.subsection.section-divider 
 					span.title Contact Me
-					hr
 					div.contact-section
 						div.location
 							h4 Current Location
@@ -232,17 +195,16 @@ html(lang='en')
 							block content
 					div.social-media
 						div
-							a(href="https://www.instagram.com/blinkingsilence/")
+							a(href="#")
 								i.fa.fa-instagram.icon-style
 						div
-							a(href="https://twitter.com/BlinkingSilence")
+							a(href="#")
 								i.fa.fa-twitter.icon-style
 						div
-							a(href="https://www.linkedin.com/in/brightn/")
+							a(href="#")
 								i.fa.fa-linkedin.icon-style
 
-				div Written by Bright Bekithemba Ndebele (2021).
-				button(onclick='topFunction()', id='returnTop') Top
+				//button(onclick='topFunction()', id='returnTop') Top
 				
 		script(src='/js/resume.js')
 		script(src='/js/bootstrap.min.js')

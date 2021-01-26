@@ -1,46 +1,32 @@
 body {
-	/*font-family: Garamond, serif;*/
-	background-color: #bbb;;
-}
-.hero-image {
-  background-image: linear-gradient(rgba(200, 200, 200, 0.1), rgba(153, 221, 255, 1)), url("cover.png");
-  height: 10%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+	font-family: Garamond, serif;
+	background-color: #555;
 }
 .title {
 	font-size:5vw;
 }	
 .custom-container{
 	display: flex;
-	border: none blue;
-	background-color: #bbb;;
-	/*width: 80vw;*/
-	margin-left: 8.5vw;
-	margin-right:1vw;
+	border: solid blue;
+	background-color: #000;
+	width: 80vw;
+	margin-left: 10vw;
 }
-.head-shot {
-	border-radius: 50%;
-}
-.profile-width {
-	width:33.33%;
-}
+
 .sidebar{
 	height: 100%;
-	width: 8.5vw;
+	width: 8vw;
 	position: fixed;
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #bbb;
+	background-color: #111;
 	overflow-x: hidden;
 	padding-top: 20px;
 	font-size: 1.5vw;
 	display:flex;
 	flex-direction: column;
-	border: none green;
+	border: solid green;
 }
 
 .about-me {
@@ -50,21 +36,19 @@ body {
 }
 .sidebar div {
 	text-align: center;
-	border-radius: 0px;
 }
 .sidebar div:hover{
-	background-color: #bbb;
+	background-color: #000;
 }
 div a {
   text-decoration: none;
-  font-size: 1.2vw;
-  color: #000;
+  color: #818181;
 }
 div a:hover {
-  color: #fff;
+  color: #f1f1f1;
 }
 .icon-style {
-	font-size: 3vw;
+	font-size: 5vw;
 }
 #returnTop {
   display: block;
@@ -79,15 +63,15 @@ div a:hover {
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 .contents{
 	width: 92vw;
 	text-align: center;
-	color: #000;
-	/*padding-top: 25vh;
-	margin-bottom: 10vh;*/
-	border: none red;
+	color: #ccc;
+	padding-top: 25vh;
+	margin-bottom: 10vh;
+	border: solid red;
 }
 .subsection {
 	font-weight: normal;
@@ -108,45 +92,61 @@ div a:hover {
 	text-align:left;
 }
 .row-head {
-	width: 15vw;
-	padding-left:5vw;
+	width: 10vw;
+	padding-left:10px;
 }
 .logo-style {
 	max-width: 25vw;
 	max-height: 25vh;
 }
 .card-style {
-	border: none 1px #555;
+	border: solid 1px #555;
 	border-radius: 4px;
 	margin-bottom: 10px;
 }
 
 /* End of education and Experience */
 
-/* Skills */
-.rating-width {
-	width: 25vw;
-	padding-right: 5vw;
+/* Skills bar */
+.empty-skill-bar {
+	width: 100%;
+	height: 20px;
+	background-color: #999;
+	border-radius: 1px;
 }
-.skill-width {
-	width:60vw;
-	text-align: left;
-	padding-left: 5vw;
+.skill-level {
+	height: 20px;
+	background-color: #444;
 }
-/* End of Skills */
+.cfd{
+	width: 80%;
+}
+.python{
+	width: 60%;
+}
+.matlab{
+	width: 85%;
+}
+.javascript{
+	width: 55%;
+}
+.html{
+	width: 90%;
+}
+.css{
+	width: 65%;
+}
+/* End of skills bar */
 .tagline{
 	font-size:10vw;
 }
 .section-divider {
 	border: #222 white;
-	border-radius: 0px;
-	background-color: #9df;
+	border-radius: 5px;
+	background-color: #111;
 	padding: 10px;
 	margin-top:10px;
-	margin-bottom:1vw;
-}
-.set-max-card-height {
-	height:40vw;
+	margin-bottom:10px;
 }
 /* Contact me section */
 .contact-section{
@@ -156,16 +156,16 @@ div a:hover {
 input, textarea {
   width: 100%;
   padding: 5px;
-  border: 1px solid #555;
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  background-color: #9df;
 }
 label {
 	float: left;
+
 }
 .location {
 	width: 40%;
@@ -178,14 +178,6 @@ label {
 	padding-top: 20px;
 }
 /* End of contact me section
-
-/* Show Images */
-.show_images {
-	max-height:auto;
-	max-width:50vw;
-	border-radius: 1vw;
-}
-/* End show images */
 
 /* Tooltip */
 .cfd {
@@ -210,12 +202,4 @@ label {
 }
 .cfd:hover .tooltiptext {
   visibility: visible;
-}
-.profile-text {
-    text-align: left;
-    padding-left: 5%;
-}
-.center-align-in-div {
-    display:flex;
-    align-items: center;
 }
