@@ -36,6 +36,11 @@ html(lang='en')
 						i.fa.fa-eye.icon-style(aria-hidden="true")
 						br
 						span Awards
+				div#highlight_pubs
+					a(href="javascript:scrollToContact('pubs')")
+						i.fa.fa-bookmark.icon-style(aria-hidden="true")
+						br
+						span Publications
 				div#highlight_contact
 					a(href="javascript:scrollToContact('contactCard')") 
 						i.fa.fa-envelope.icon-style(aria-hidden="true")
@@ -58,8 +63,10 @@ html(lang='en')
 							each i in profile
 								a(href="https://wa.me/27721263378?text=Hey%20Bright.")
 										i.fa.fa-whatsapp.icon-style
+										br
+										span What's up?
 					hr
-					h5 Scientist 
+					h5 Bright Bekithemba Ndebele
 				// Education
 				div.subsection.section-divider.set-max-card-height#education
 					span.title Education
@@ -206,18 +213,14 @@ html(lang='en')
 									span !{k.period}
 									
 				
-				//div.subsection.section-divider.set-max-card-height 
-					//h1 My Photos
-					//hr
-					//div.carousel.slide.carousel-fade(data-bs-ride="carousel")
-						//div.carousel-inner
-							//each k in show_images
-								//if k.active
-									//div.carousel-item.active(data-bs-interval="2200")
-										//img.show_images(src=k.image,alt=k.alt)
-								//else
-									//div.carousel-item(data-bs-interval="2200")
-										//img.show_images(src=k.image,alt=k.alt)
+				div.subsection.section-divider#pubs
+					h1 Publications
+					hr
+					div
+					each k in pubs
+						div.table-format.pubs-entry
+							span !{k.author}, !{k.title}, !{k.journal}, !{k.year}
+							br
 				
 				div.subsection.section-divider#contactCard
 					span.title Contact Me
@@ -241,7 +244,13 @@ html(lang='en')
 							a(href="https://www.linkedin.com/in/brightn/")
 								i.fa.fa-linkedin.icon-style
 
-				div Written by Bright Bekithemba Ndebele (2021).
+				div Written by Bright Bekithemba Ndebele 
+					a(href="https://github.com/BekithembaNdebele/BBN-Resume")
+						i.fa.fa-github
+						span  Github
+					br
+					each k in siteversion
+						span Last updated: !{k.lastupdate}
 				button(onclick='topFunction()', id='returnTop') Top
 				
 		script(src='/js/resume.js')

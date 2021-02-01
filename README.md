@@ -1,3 +1,7 @@
 # Resume for Bright Bekithemba Ndebele
 # 
-# Last updated 26 January 2021
+# Updated 01 February 2021
+# Added a section with list of publications
+# Changed education icon to school
+# Added a menu item for publications
+# Added a version tracker

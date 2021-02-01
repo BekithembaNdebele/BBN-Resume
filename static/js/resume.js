@@ -15,8 +15,8 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
   // Note that menuItems array must be placed in the order in which they appear on the page
-  let menuItems = ["top","education","experience","abilities","awards","contact"]; 
-  let highlightMenuItems = ["highlight_home","highlight_education","highlight_experience","highlight_abilities","highlight_awards","highlight_contact"]; 
+  let menuItems = ["top","education","experience","abilities","awards","pubs","contact"]; 
+  let highlightMenuItems = ["highlight_home","highlight_education","highlight_experience","highlight_abilities","highlight_awards","highlight_pubs","highlight_contact"]; 
   for (i = 0; i < menuItems.length-1; i++){
 	let item = document.getElementById(menuItems[i])
 	let nitem= document.getElementById(menuItems[i+1])
